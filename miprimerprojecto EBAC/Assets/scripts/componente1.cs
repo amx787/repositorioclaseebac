@@ -5,7 +5,7 @@ using UnityEngine;
 public class componente1 : MonoBehaviour
 {
     public static GameObject miObjeto;
-    private void Awake();
+    private void Awake()
 
         miObjeto = this.gameObject;
 
