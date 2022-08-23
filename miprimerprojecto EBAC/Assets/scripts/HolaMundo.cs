@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class HolaMundo : MonoBehaviour
 {
+    
+    int x;
+
     // Start is called before the first frame update
     void Start()
     {
+
+        x = 0;
         print("algo paso");
         
         Debug.LogWarning("Algo salio Medianamente Mal");
@@ -16,6 +21,7 @@ public class HolaMundo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Algo Paso");
+        x = x + 1;
+        Debug.Log(x);
     }
 }
