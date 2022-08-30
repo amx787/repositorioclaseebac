@@ -7,7 +7,7 @@ public class componente3 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        componente1.miObjeto.name = "nuevoNombreDeMiobjeto";
     }
 
     // Update is called once per frame
