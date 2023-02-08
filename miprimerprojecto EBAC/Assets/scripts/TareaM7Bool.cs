@@ -7,11 +7,12 @@ public class TareaM7Bool : MonoBehaviour
 
     bool variable1;
     bool variable2;
-    int valor1 = 2;
+    bool variable3;
+    int valor1 = 1;
     int limiteInferior = 0;
     int limiteSuperior = 1;
     
-    enum SelecionColor
+    enum SeleccionColor
     {
         negro,
         blanco
@@ -29,17 +30,52 @@ public class TareaM7Bool : MonoBehaviour
     {
         variable1 = true;
         variable2 = false;
+        variable3 = false;
+       
         if (variable1 || variable2)
         {
-            Debug.Log("La variable 1 es verdadero");  
+            Debug.Log("la variable2 es falsa");
+
+            Debug.Log("la variable2 es verdadera");  
         }
+
+        if ((variable1 || variable2) && variable3)
+        {
+            Debug.Log("La variable 1 es verdadero");
+        }
+        if ((variable1 || variable2) || variable3)
+        {
+            if (variable1)
+            {
+                Debug.Log("La variable 1 es verdadera");
+            }
+            Debug.Log("La operacion 3 es verdadera");
+        }
+        if ((variable3 && variable2) || variable1)
+        {
+            Debug.Log("la operacion 3 es verdadera");
+        }
+
         valor1 = Random.Range(limiteInferior, limiteSuperior);
         Debug.Log(valor1);
-        if (valor1 >= 0)
-        {
-            Debug.Log("el valor es positivo");
-                
-        }
+
+        string resultado = (valor1 >= 1) ? "el valor es positivo" : "el valor es negartivo";
+        Debug.Log(resultado);
+        
+        //switch (valor1)
+        ////if (valor1 >= 0)
+        //{
+        //    case (int)SeleccionColor.negro: 
+        //        Debug.Log("el color selecionado es negro");
+        //        break;
+        //   case (int)SeleccionColor.blanco:
+        //        Debug.Log("el color seleccionado es blanco");
+        //        break; 
+        //   // Debug.Log("el valor es positivo");
+
+            
+            
+        
             
     } 
 }
