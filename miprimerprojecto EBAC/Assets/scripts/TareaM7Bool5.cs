@@ -31,7 +31,7 @@ public class TareaM7Bool5 : MonoBehaviour
         variable2 = false;
         variable3 = false;
 
-        if ((variable1 && variable2) && variable2) 
+        if ((variable1 || variable2) && variable2) 
         {
 
             Debug.Log("la operacion 1 es verdadero");
