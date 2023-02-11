@@ -21,13 +21,17 @@ public class TareaM7Bool5 : MonoBehaviour
         blanco
     }
     // Start is called before the first frame update
-    void Start()
+    private void Start()
+    {
+        
+    }
+    void FixedUpdate()
     {
         variable1 = true;
         variable2 = false;
         variable3 = false;
 
-        if ((variable1 || variable1) || (variable1  || variable2 ))
+        if ((variable1 && variable2) && variable2) 
         {
 
             Debug.Log("la operacion 1 es verdadero");
