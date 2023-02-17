@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PruebaDos : MonoBehaviour
 {
-    bool BoolDos;
+    public bool BoolDos = false; 
     Color w = Color.white;
     Color b = Color.black;
     
@@ -16,7 +16,7 @@ public class PruebaDos : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    public void FixedUpdate()
     {
         if (BoolDos == true)
         {

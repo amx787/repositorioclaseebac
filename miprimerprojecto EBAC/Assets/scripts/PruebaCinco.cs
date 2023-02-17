@@ -17,9 +17,10 @@ public class PruebaCinco : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        if (BoolTres && BoolCuatro )
+        
+        if (BoolTres.BoolTres  && BoolCuatro.BoolCuatro )
         {
             BoolCinco = true;
             GetComponent<MeshRenderer>().material.color = w;  

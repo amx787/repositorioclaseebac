@@ -17,7 +17,7 @@ public class PruebaUno : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+     public void FixedUpdate()
     {
         if (BoolUno == true)
         {

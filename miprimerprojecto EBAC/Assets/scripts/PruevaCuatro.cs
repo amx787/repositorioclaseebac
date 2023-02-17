@@ -17,11 +17,10 @@ public class PruevaCuatro : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    public void FixedUpdate()
     {
-        //GameObject.Component<PruebaUno>).BoolUno;
-        //Debug.Log(PruebaUno.BoolUno);
-        if  (BoolUno && BoolDos )
+        
+        if  (BoolUno.BoolUno  && BoolDos.BoolDos )
             
         {
             BoolCuatro = true;

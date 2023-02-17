@@ -17,24 +17,21 @@ public class PruebaTres : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    public void FixedUpdate()
     {
-        BoolUno = GameObject.Find("BoolUno").GetComponent<PruebaUno>();
-        BoolDos = GameObject.Find("BoolDos").GetComponent<PruebaDos>();
-        GameObject.GetComponet<PruebaUno>().BoolUno;    
-        Debug.Log(PruebaUno.BoolUno):  
-            
-        if (BoolUno || BoolDos) 
+
+
+        if (BoolUno.BoolUno || BoolDos.BoolDos)
         {
 
             BoolTres = true;
             GetComponent<MeshRenderer>().material.color = w;
-              
+
         }
         else
         {
             BoolTres = false;
-            GetComponent<MeshRenderer>().material.color = b;  
+            GetComponent<MeshRenderer>().material.color = b;
         }
     }
 }
