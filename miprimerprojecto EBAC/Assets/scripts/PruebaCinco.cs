@@ -23,7 +23,8 @@ public class PruebaCinco : MonoBehaviour
         if (BoolTres.BoolTres  && BoolCuatro.BoolCuatro )
         {
             BoolCinco = true;
-            GetComponent<MeshRenderer>().material.color = w;  
+            GetComponent<MeshRenderer>().material.color = w;
+              
         }
         else
         {
