@@ -43,7 +43,7 @@ public class StringAndChartMod8 : MonoBehaviour
             Debug.LogFormat("Fragmento {0} = {1}", (1+1), trozos[i]);
         }
         
-        Debug.Log(prueba[^6..]); 
+        Debug.Log(prueba[^5..]); 
     }
     private void FixedUpdate()
     {
@@ -60,7 +60,7 @@ public class StringAndChartMod8 : MonoBehaviour
 
         }
 
-        string mistring = numero.ToString();
+        string mistring = numero.ToString();    
         Debug.Log(numero);
         miLetra1 = mistring[1];  /*tomo en cuata el valor 1 sabiendo que imprimiria el 2 el valor sero seria el 1 */
         miLetra2 = mistring[2];
@@ -74,9 +74,9 @@ public class StringAndChartMod8 : MonoBehaviour
 
         string nombreCompleto1 = miNombre.Substring(0,5);
         Debug.Log(nombreCompleto1); 
-        string nombreCompleto2 = miNombre.Substring(0, 12);
+        string nombreCompleto2 = miNombre.Substring(6, 5);
         Debug.Log(nombreCompleto2);
-        string nombreCompleto3 = miNombre.Substring(0, 16);
+        string nombreCompleto3 = miNombre.Substring(12, 4);
         Debug.Log(nombreCompleto3);
 
         char[] delimitador = { ',', ' ' };
@@ -95,17 +95,13 @@ public class StringAndChartMod8 : MonoBehaviour
         
         var valido1 = int.TryParse("1299",out entero1);
         var valido2 = int.TryParse("1701", out entero2);
-        if (valido1  || valido2 )
+        if (valido1 || valido2) 
         {
-            resulado1  = true;
+            resulado1 = (valido1 || valido2);
             Debug.Log(resulado1); 
-        }
-        else
-        {
-            resulado1 = false;
-            Debug.Log(resulado1);
-
 
         }
+       
+        
     }
 }
